@@ -1,0 +1,52 @@
+form{
+  display: flex;
+  flex-direction: row;
+  float: left;
+  padding:5px;
+  background-color: #FFFFFF;
+  margin-right: 100px;
+  height: auto;
+}
+
+body {
+  margin:0;
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h5{
+ margin-right: 7px;
+ margin-bottom: 0;
+ line-height: unset;
+ vertical-align: middle;
+}
+
+h6{
+  display: flex;
+  align-content: center;
+  float: left;
+}
+
+i {
+  color: #dfa726;
+  margin-left: auto;
+  float: right;
+}
+
+#ville {
+  margin-right: inherit;
+}
+
+#btn {
+  color: white;
+  margin-left: 5px
+}
+
+.row {
+  border: 1px solid #dcdde1;
+  padding: 7px;
+}

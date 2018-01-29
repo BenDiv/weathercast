@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Appli Météo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/3ae3e3024f.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+
+  <body>
+    <div class="row-list">
+
+        <div  id="form" class="col-lg-6">
+         <form action="/add-city" method="post">
+          <span id="count"><h5>Ville</h5></span>
+           <input type="text" placeholder="Paris, Lyon ..." name="city">
+           <input id="btn" type="submit" name="button" class="btn btn-warning" value="Ajouter">
+         </form>
+       </div>
+
+       <%
+        for(var i=0; i<city.length; i++) {
+       %>
+       <div class="row">
+         <div id="element" class="col-lg-12">
+          <div id="ville">
+            <h6><%= city[i].name %></h6>
+            <a href="delete-city?position=<%=i%>"><i class="fa fa-times" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      </div>
+      <%
+      }
+      %>
+            </div>
+  </body>
+</html>
